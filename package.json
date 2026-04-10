@@ -3,9 +3,6 @@
   "version": "2.0.8",
   "description": "Vue Switch",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/enso-ui/switch.git"
@@ -16,24 +13,12 @@
     "bulma"
   ],
   "author": "Adrian Ocneanu <aocneanu@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/enso-ui/switch/issues"
   },
   "homepage": "https://github.com/enso-ui/switch#readme",
-  "dependencies": {
-    "bulma": "^0.9.0",
+  "peerDependencies": {
     "vue": "^3.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "5.0.0-beta.6",
-    "@vue/cli-plugin-eslint": "5.0.0-beta.6",
-    "@vue/eslint-config-airbnb": "^5.0.0",
-    "autoprefixer": "^9.6.1",
-    "babel-eslint": "^10.0.1",
-    "cross-env": "^6.0.0",
-    "eslint": "^7.0.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-vue": "^8.0.3"
   }
 }
