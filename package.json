@@ -1,27 +1,27 @@
 {
-  "name": "@enso-ui/switch",
-  "version": "2.1.1",
-  "description": "Vue Switch",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enso-ui/switch.git"
-  },
-  "keywords": [
-    "switch",
-    "vue",
-    "bulma"
-  ],
-  "author": "Adrian Ocneanu <aocneanu@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/enso-ui/switch/issues"
-  },
-  "homepage": "https://github.com/enso-ui/switch#readme",
-  "peerDependencies": {
-    "vue": "^3.5.0"
-  },
-  "devDependencies": {
-    "vue": "^3.5.0"
-  }
+    "name": "@enso-ui/switch",
+    "version": "2.1.1",
+    "description": "Switch input component for Enso UI.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enso-ui/switch.git"
+    },
+    "keywords": [
+        "switch",
+        "vue",
+        "bulma"
+    ],
+    "author": "Adrian Ocneanu <aocneanu@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/enso-ui/switch/issues"
+    },
+    "homepage": "https://github.com/enso-ui/switch#readme",
+    "peerDependencies": {
+        "vue": "^3.5.0"
+    },
+    "devDependencies": {
+        "vue": "^3.5.0"
+    }
 }
