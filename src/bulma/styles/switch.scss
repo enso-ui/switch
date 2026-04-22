@@ -1,0 +1,147 @@
+.vue-switch {
+    display: inline-flex;
+    align-items: center;
+    --enso-switch-accent: var(--bulma-dark);
+    --height: 1rem;
+    --enso-switch-track: var(--bulma-border);
+    --enso-switch-track-active: var(--enso-switch-accent);
+    --enso-switch-thumb: var(--bulma-scheme-main);
+    --enso-switch-thumb-muted: var(--bulma-text-light);
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .control-switch {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        cursor: pointer;
+        width: calc(1.7 * var(--height));
+        height: var(--height);
+        border: 1px solid var(--enso-switch-track);
+        border-radius: var(--height);
+        background-color: var(--enso-switch-track);
+
+        &:before,
+        &:after {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: calc(var(--height) - 2px);
+            border-radius: var(--height);
+            transition: 0.25s;
+        }
+
+        &:before {
+            width: calc(1.7 * var(--height) - 2px);
+            background-color: var(--enso-switch-thumb-muted);
+        }
+
+        &:after {
+            width: calc(var(--height) - 2px);
+            background-color: var(--enso-switch-thumb);
+            box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1);
+        }
+
+        &.checked {
+            border-color: var(--enso-switch-track-active);
+            background-color: var(--enso-switch-track-active);
+
+            &:before {
+                transform: scale(0);
+            }
+
+            &:after {
+                transform: translateX(calc(0.7 * var(--height)));
+            }
+        }
+
+        &.checked.disabled {
+            cursor: not-allowed;
+            border-color: color-mix(in srgb, var(--enso-switch-track-active) 55%, white);
+            background-color: color-mix(in srgb, var(--enso-switch-track-active) 55%, white);
+        }
+    }
+
+    .control-label {
+        cursor: pointer;
+        font-size: calc(0.9 * var(--height));
+    }
+
+    &.is-small {
+        --height: 0.75rem;
+    }
+
+    &.is-medium {
+        --height: 1.25rem;
+    }
+
+    &.is-large {
+        --height: 1.5rem;
+    }
+
+    &.is-primary {
+        --enso-switch-track-active: var(--bulma-primary);
+    }
+
+    &.is-link {
+        --enso-switch-track-active: var(--bulma-link);
+    }
+
+    &.is-info {
+        --enso-switch-track-active: var(--bulma-info);
+    }
+
+    &.is-success {
+        --enso-switch-track-active: var(--bulma-success);
+    }
+
+    &.is-warning {
+        --enso-switch-track-active: var(--bulma-warning);
+    }
+
+    &.is-danger {
+        --enso-switch-track-active: var(--bulma-danger);
+    }
+}
+
+[data-theme='dark'] .vue-switch,
+.theme-dark .vue-switch {
+    --enso-switch-track: var(--bulma-dark);
+    --enso-switch-track-active: var(--bulma-border);
+
+    .control-switch {
+        &:before {
+            background-color: var(--enso-switch-track-active);
+        }
+
+        &.checked {
+            border-color: var(--enso-switch-thumb-muted);
+            background-color: var(--enso-switch-thumb-muted);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme]) .vue-switch {
+        --enso-switch-track: var(--bulma-dark);
+        --enso-switch-track-active: var(--bulma-border);
+
+        .control-switch {
+            &:before {
+                background-color: var(--enso-switch-track-active);
+            }
+
+            &.checked {
+                border-color: var(--enso-switch-thumb-muted);
+                background-color: var(--enso-switch-thumb-muted);
+            }
+        }
+    }
+}
