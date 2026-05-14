@@ -114,16 +114,11 @@
 [data-theme='dark'] .vue-switch,
 .theme-dark .vue-switch {
     --enso-switch-track: var(--bulma-dark);
-    --enso-switch-track-active: var(--bulma-border);
+    --enso-switch-accent: var(--bulma-border);
 
     .control-switch {
         &:before {
             background-color: var(--enso-switch-track-active);
-        }
-
-        &.checked {
-            border-color: var(--enso-switch-thumb-muted);
-            background-color: var(--enso-switch-thumb-muted);
         }
     }
 }
@@ -131,16 +126,11 @@
 @media (prefers-color-scheme: dark) {
     html:not([data-theme]) .vue-switch {
         --enso-switch-track: var(--bulma-dark);
-        --enso-switch-track-active: var(--bulma-border);
+        --enso-switch-accent: var(--bulma-border);
 
         .control-switch {
             &:before {
                 background-color: var(--enso-switch-track-active);
-            }
-
-            &.checked {
-                border-color: var(--enso-switch-thumb-muted);
-                background-color: var(--enso-switch-thumb-muted);
             }
         }
     }
