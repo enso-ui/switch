@@ -118,7 +118,7 @@
 
     .control-switch {
         &:before {
-            background-color: var(--enso-switch-track-active);
+            background-color: var(--enso-switch-accent);
         }
     }
 }
@@ -130,7 +130,7 @@
 
         .control-switch {
             &:before {
-                background-color: var(--enso-switch-track-active);
+                background-color: var(--enso-switch-accent);
             }
         }
     }
